@@ -1,0 +1,1384 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<style data-omelette-injected>html,body{background:transparent}</style><script data-omelette-injected>(()=>{var A=["https://claude.ai","https://preview.claude.ai","https://eap-omelette.claude.ai"];var L=30000;var u=3000;document.addEventListener("DOMContentLoaded",()=>{const V=window.Babel;const $="om-src-id";if(V&&V.registerPlugin&&!(V.availablePlugins&&V.availablePlugins[$])){V.registerPlugin($,({types:Q})=>({visitor:{JSXOpeningElement(W,X){const K=W.node;if(K.name&&K.name.type==="JSXMemberExpression")return;for(let J=0;J<K.attributes.length;J++){const w=K.attributes[J];if(w.type==="JSXAttribute"&&w.name&&w.name.name==="data-om-id")return}const z=X.file&&X.file.opts&&X.file.opts.filename||"?";const k=K.loc&&K.loc.start;const C=`jsx:${z}:${K.start??0}:${k?k.line:0}:${k?k.column+1:0}`;K.attributes.push(Q.jsxAttribute(Q.jsxIdentifier("data-om-id"),Q.stringLiteral(C)))}}}))}const Z=["transform-react-jsx-source",$];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Q,W)=>{const X=Q.getAttribute("data-plugins")||"";const K=Z.filter((z)=>X.indexOf(z)<0);if(K.length){Q.setAttribute("data-plugins",X?`${X},${K.join(",")}`:K.join(","))}if(!Q.hasAttribute("data-filename")){Q.setAttribute("data-filename",Q.getAttribute("src")||`inline-${W}`)}})});var b=window.parent;if(b&&b!==window){const V=(z,k)=>{try{b.postMessage({__omelette_log:true,type:z,data:k},"*")}catch{}};["log","warn","error"].forEach((z)=>{const k=console[z];console[z]=(...C)=>{const J=C.map((w)=>{try{return typeof w==="object"?JSON.stringify(w):String(w)}catch{try{return String(w)}catch{return"[unstringifiable]"}}}).join(" ");V(z,J);k.apply(console,C)}});window.addEventListener("error",(z)=>{const k=z.target;if(k&&k!==window&&k.tagName){const C=k.src||k.href||"";V("resource_error",`${k.tagName} failed to load: ${C}`)}else{V("error",`${z.message||"Unknown error"} at ${z.filename||"?"}:${z.lineno||0}:${z.colno||0}`)}},true);window.addEventListener("unhandledrejection",(z)=>{const k=z.reason;const C=k instanceof Error?`${k.message} ${k.stack}`:String(k);V("error",`Unhandled rejection: ${C}`)});const $=()=>{try{b.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")$();else window.addEventListener("load",$);if(window.ResizeObserver)new ResizeObserver($).observe(document.documentElement);const Z={};let Q=0;window.claude={complete(z){return new Promise((k,C)=>{if(!A.length){C(new Error("claude.complete: no parent origin"));return}const J=`c${++Q}`;const w=()=>setTimeout(()=>{delete Z[J];C(new Error(`claude.complete: no data for ${L/1000}s`))},L);const Y=w();Z[J]={resolve:k,reject:C,text:"",t:Y,arm:w};try{for(const F of A){b.postMessage({__om_api:true,id:J,body:z},F)}}catch(F){clearTimeout(Y);delete Z[J];C(F)}})}};const W={};let X=0;window.omelette={writeFile:(z,k)=>new Promise((C,J)=>{if(!A.length){C();return}const w=`f${++X}`;const Y=setTimeout(()=>{delete W[w];C()},u);W[w]={resolve:C,reject:J,t:Y};try{for(const F of A){b.postMessage({__om_file:true,id:w,op:"write",path:z,content:k},F)}}catch{clearTimeout(Y);delete W[w];C()}})};const K=(z)=>{try{return JSON.stringify(z)}catch{return JSON.stringify(String(z))}};window.addEventListener("message",(z)=>{if(A.indexOf(z.origin)<0)return;if(z.source!==b)return;const k=z.data;if(!k)return;if(k.__om_file_r){const w=W[k.id];if(!w)return;clearTimeout(w.t);delete W[k.id];if(k.ok)w.resolve();else w.reject(new Error(k.error||"write failed"));return}if(k.__om_api_r){const w=Z[k.id];if(!w)return;if(k.error!=null){clearTimeout(w.t);delete Z[k.id];w.reject(new Error(k.error));return}if(k.chunk!=null){clearTimeout(w.t);w.t=w.arm();w.text+=k.chunk;return}if(k.done){clearTimeout(w.t);delete Z[k.id];w.resolve(k.text!=null?k.text:w.text);return}return}if(!k.__om_eval)return;const C=k;const J=(w)=>{z.source.postMessage({...w,__om_eval_r:1,id:C.id},z.origin)};try{const w=(0,eval)(C.code);if(w&&typeof w.then==="function"){w.then((Y)=>J({ok:1,v:K(Y)}),(Y)=>J({ok:0,e:String(Y)}))}else{J({ok:1,v:K(w)})}}catch(w){J({ok:0,e:String(w)})}})}})();
+</script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agenda 2030 · Los 17 Objetivos de Desarrollo Sostenible</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --un-blue:#009EDB;
+  --un-blue-deep:#003F7F;
+  --un-blue-darker:#002247;
+  --ink:#0c1320;
+  --ink-2:#1a2233;
+  --paper:#f6f5f1;
+  --paper-2:#ecebe5;
+  --rule:#d8d6cd;
+  --muted:#5b6473;
+
+  --c1:#E5243B; --c2:#DDA63A; --c3:#4C9F38; --c4:#C5192D; --c5:#FF3A21;
+  --c6:#26BDE2; --c7:#FCC30B; --c8:#A21942; --c9:#FD6925; --c10:#DD1367;
+  --c11:#FD9D24; --c12:#BF8B2E; --c13:#3F7E44; --c14:#0A97D9; --c15:#56C02B;
+  --c16:#00689D; --c17:#19486A;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"Inter",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4{font-family:"Montserrat",sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
+h1{font-size:clamp(2.4rem,6vw,5.4rem);font-weight:900}
+h2{font-size:clamp(1.8rem,3.8vw,3.2rem)}
+h3{font-size:clamp(1.1rem,1.6vw,1.4rem);letter-spacing:-.01em}
+p{margin:0 0 1em 0}
+a{color:inherit}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;letter-spacing:.02em}
+
+/* ───────── Reading progress ───────── */
+.read-progress{
+  position:fixed;top:0;left:0;right:0;height:3px;z-index:100;
+  background:transparent;
+}
+.read-progress::before{
+  content:"";position:absolute;left:0;top:0;height:100%;width:var(--p,0%);
+  background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6),var(--c7),var(--c8),var(--c9),var(--c10),var(--c11),var(--c12),var(--c13),var(--c14),var(--c15),var(--c16),var(--c17));
+  transition:width .08s linear;
+}
+
+/* ───────── Sticky nav ───────── */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,245,241,.85);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-inner{
+  max-width:1400px;margin:0 auto;
+  padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  font-family:"Montserrat",sans-serif;font-weight:800;letter-spacing:-.02em;
+  font-size:1.05rem;
+}
+.brand-mark{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--un-blue-deep);
+  display:grid;place-items:center;color:#fff;font-size:.8rem;
+  font-family:"JetBrains Mono",monospace;
+}
+.nav-links{display:flex;gap:22px;font-size:.85rem;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted);transition:color .3s}
+.nav-links a:hover{color:var(--ink)}
+.nav-tag{
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--muted);font-family:"JetBrains Mono",monospace;
+}
+@media(max-width:880px){.nav-links{display:none}}
+
+/* ───────── Hero ───────── */
+.hero{
+  background:var(--un-blue-darker);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  padding:120px 28px 0;
+  min-height:100vh;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(0,158,219,.35), transparent 55%),
+    radial-gradient(ellipse at 90% 30%, rgba(25,72,106,.6), transparent 60%);
+  pointer-events:none;
+}
+.hero-grid-bg{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(to bottom, black 60%, transparent 100%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1400px;margin:0 auto;width:100%;
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.5fr .9fr;gap:60px;align-items:end;
+  padding-bottom:60px;
+}
+@media(max-width:980px){.hero-inner{grid-template-columns:1fr;gap:40px}}
+
+.hero-eyebrow{
+  display:flex;align-items:center;gap:14px;
+  font-family:"JetBrains Mono",monospace;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);
+  margin-bottom:24px;
+}
+.hero-eyebrow::before{
+  content:"";width:42px;height:1px;background:rgba(255,255,255,.5);
+}
+.hero h1{
+  color:#fff;
+  text-wrap:balance;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(90deg,var(--c6),var(--c3),var(--c7),var(--c5));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-sub{
+  margin-top:28px;
+  font-size:clamp(1rem,1.3vw,1.2rem);
+  max-width:62ch;
+  color:rgba(255,255,255,.78);
+  line-height:1.55;
+}
+.hero-meta{
+  margin-top:36px;display:flex;gap:18px;flex-wrap:wrap;
+  font-size:.78rem;color:rgba(255,255,255,.55);
+  font-family:"JetBrains Mono",monospace;letter-spacing:.1em;
+}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta span::before{content:"";width:6px;height:6px;background:var(--un-blue);border-radius:50%}
+
+.hero-counters{
+  display:grid;grid-template-rows:1fr 1fr 1fr;gap:1px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);
+}
+.counter{
+  background:var(--un-blue-darker);
+  padding:28px 28px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+}
+.counter .num{
+  font-family:"Montserrat",sans-serif;font-weight:900;
+  font-size:clamp(2.6rem,5vw,4.2rem);
+  letter-spacing:-.04em;line-height:1;
+  color:#fff;
+}
+.counter .lbl{
+  text-align:right;
+  font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.65);
+  font-family:"JetBrains Mono",monospace;
+  max-width:14ch;
+}
+.counter:nth-child(1) .num{color:var(--c6)}
+.counter:nth-child(2) .num{color:var(--c7)}
+.counter:nth-child(3) .num{color:var(--c5)}
+
+/* SDG color band */
+.sdg-band{
+  display:grid;grid-template-columns:repeat(17,1fr);
+  height:14px;
+  position:relative;z-index:2;
+}
+.sdg-band span{
+  display:block;
+  transform-origin:bottom;
+  animation:rise 1.2s cubic-bezier(.2,.7,.2,1) backwards;
+}
+@keyframes rise{from{transform:scaleY(.1);opacity:0}to{transform:scaleY(1);opacity:1}}
+
+/* ───────── Section shell ───────── */
+section{padding:120px 28px;position:relative}
+.wrap{max-width:1400px;margin:0 auto}
+.kicker{
+  display:flex;align-items:center;gap:14px;
+  font-family:"JetBrains Mono",monospace;
+  font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:18px;
+}
+.kicker::before{content:"";width:32px;height:1px;background:currentColor}
+.section-head{
+  display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end;
+  margin-bottom:64px;
+}
+.section-head h2{text-wrap:balance;max-width:18ch}
+.section-head .lede{
+  color:var(--muted);font-size:1.05rem;line-height:1.6;
+  max-width:48ch;
+}
+@media(max-width:880px){.section-head{grid-template-columns:1fr;gap:24px}}
+
+/* ───────── Section: ¿Qué son? — pilares ───────── */
+.pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+}
+.pillar{
+  background:#fff;
+  padding:48px 36px;
+  display:flex;flex-direction:column;gap:24px;
+  position:relative;overflow:hidden;
+  transition:transform .3s ease;
+}
+.pillar:hover{transform:translateY(-4px)}
+.pillar-num{
+  font-family:"JetBrains Mono",monospace;font-size:.75rem;
+  letter-spacing:.22em;color:var(--muted);
+}
+.pillar-icon{
+  width:64px;height:64px;border-radius:50%;
+  display:grid;place-items:center;color:#fff;
+}
+.pillar h3{font-size:1.6rem;font-weight:800}
+.pillar p{color:var(--muted);font-size:.95rem;line-height:1.6;margin:0}
+.pillar-stat{
+  margin-top:auto;padding-top:28px;
+  border-top:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+}
+.pillar-stat strong{
+  font-family:"Montserrat",sans-serif;font-weight:800;
+  font-size:1.6rem;letter-spacing:-.02em;
+}
+.pillar-stat span{
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);font-family:"JetBrains Mono",monospace;
+  text-align:right;max-width:18ch;
+}
+.p-personas{border-top:4px solid var(--c1)}
+.p-planeta{border-top:4px solid var(--c13)}
+.p-prosperidad{border-top:4px solid var(--c8)}
+.p-personas .pillar-icon{background:var(--c1)}
+.p-planeta .pillar-icon{background:var(--c13)}
+.p-prosperidad .pillar-icon{background:var(--c8)}
+@media(max-width:880px){.pillars{grid-template-columns:1fr}}
+
+/* ───────── Section: 17 ODS grid ───────── */
+.sdg-section{background:var(--paper-2)}
+.sdg-grid{
+  display:grid;grid-template-columns:repeat(9,1fr);gap:8px;
+}
+.sdg-grid .row2{grid-column:span 1}
+.sdg-grid > .sdg{aspect-ratio:1;}
+.sdg-row2{
+  grid-column:1 / -1;
+  display:grid;grid-template-columns:repeat(8,1fr);gap:8px;
+  margin-top:0;
+}
+.sdg{
+  position:relative;
+  border:none;cursor:pointer;
+  color:#fff;text-align:left;
+  padding:14px 14px 16px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  font-family:"Inter",sans-serif;
+  overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s;
+  min-height:140px;
+}
+.sdg:hover{
+  transform:translateY(-4px) scale(1.02);
+  box-shadow:0 14px 30px -10px rgba(0,0,0,.35);
+  z-index:3;
+}
+.sdg .num{
+  font-family:"Montserrat",sans-serif;font-weight:900;
+  font-size:1.6rem;line-height:1;letter-spacing:-.02em;
+}
+.sdg .ttl{
+  font-weight:700;font-size:.78rem;line-height:1.2;
+  letter-spacing:-.005em;
+  text-transform:uppercase;
+}
+.sdg .desc{
+  position:absolute;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,.78);color:#fff;
+  padding:14px;font-size:.72rem;line-height:1.4;
+  transform:translateY(100%);transition:transform .3s ease;
+}
+.sdg:hover .desc{transform:translateY(0)}
+.sdg .icon{
+  position:absolute;top:14px;right:14px;width:26px;height:26px;opacity:.85;
+}
+@media(max-width:1100px){
+  .sdg-grid{grid-template-columns:repeat(6,1fr)}
+  .sdg-row2{grid-template-columns:repeat(6,1fr)}
+}
+@media(max-width:680px){
+  .sdg-grid{grid-template-columns:repeat(3,1fr)}
+  .sdg-row2{grid-template-columns:repeat(3,1fr)}
+}
+
+/* ───────── Section: Estado de cumplimiento ───────── */
+.status{
+  background:var(--ink);color:#fff;
+}
+.status .kicker{color:rgba(255,255,255,.6)}
+.status h2{color:#fff}
+.status .lede{color:rgba(255,255,255,.65)}
+.status-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.1);
+}
+.stat{
+  background:var(--ink);
+  padding:48px 36px;
+  display:flex;flex-direction:column;gap:24px;
+}
+.stat .pct{
+  font-family:"Montserrat",sans-serif;font-weight:900;
+  font-size:clamp(3.6rem,7vw,6rem);letter-spacing:-.04em;line-height:1;
+}
+.stat-label{
+  font-size:1.05rem;font-weight:600;color:#fff;
+}
+.stat-detail{
+  font-size:.86rem;color:rgba(255,255,255,.6);line-height:1.55;
+}
+.stat .bar{
+  height:6px;background:rgba(255,255,255,.12);position:relative;overflow:hidden;
+}
+.stat .bar i{
+  display:block;height:100%;width:0;
+  transition:width 1.6s cubic-bezier(.2,.7,.2,1);
+}
+.stat-1 .pct,.stat-1 .bar i{color:var(--c3);background:var(--c3)}
+.stat-2 .pct,.stat-2 .bar i{color:var(--c7);background:var(--c7)}
+.stat-3 .pct,.stat-3 .bar i{color:var(--c1);background:var(--c1)}
+.stat-1 .pct,.stat-2 .pct,.stat-3 .pct{background:transparent}
+.status-meta{
+  margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);
+  font-size:.78rem;color:rgba(255,255,255,.5);
+  font-family:"JetBrains Mono",monospace;letter-spacing:.04em;
+}
+@media(max-width:880px){.status-grid{grid-template-columns:1fr}}
+
+/* ───────── Section: Financiamiento ───────── */
+.finance-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1px;
+  background:var(--rule);border:1px solid var(--rule);
+}
+.fin{
+  background:#fff;padding:44px 32px;
+  display:flex;flex-direction:column;gap:20px;
+  transition:background .3s;
+}
+.fin:hover{background:#fafaf6}
+.fin .icon{width:42px;height:42px;color:var(--un-blue-deep)}
+.fin .big{
+  font-family:"Montserrat",sans-serif;font-weight:900;
+  font-size:clamp(2.4rem,5vw,4.2rem);letter-spacing:-.04em;line-height:1;
+}
+.fin h3{font-size:1.05rem;font-weight:700}
+.fin p{color:var(--muted);font-size:.9rem;line-height:1.6;margin:0}
+.fin .src{
+  margin-top:auto;padding-top:18px;border-top:1px solid var(--rule);
+  font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);font-family:"JetBrains Mono",monospace;
+}
+.fin-1 .big{color:var(--un-blue-deep)}
+.fin-2 .big{color:var(--c3)}
+.fin-3 .big{color:var(--c13)}
+@media(max-width:980px){.finance-grid{grid-template-columns:1fr}}
+
+/* ───────── Section: Timeline ───────── */
+.timeline-section{background:#fff;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.timeline{
+  position:relative;margin-top:60px;
+  padding:60px 0 40px;
+}
+.timeline::before{
+  content:"";position:absolute;left:0;right:0;top:50%;
+  height:2px;background:var(--rule);
+}
+.tl-track{
+  display:grid;grid-template-columns:repeat(7,1fr);gap:20px;
+  position:relative;
+}
+.tl-item{
+  position:relative;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  cursor:pointer;
+}
+.tl-year{
+  font-family:"Montserrat",sans-serif;font-weight:800;
+  font-size:1.4rem;letter-spacing:-.02em;
+}
+.tl-dot{
+  width:18px;height:18px;border-radius:50%;
+  background:#fff;border:3px solid var(--un-blue-deep);
+  position:relative;z-index:2;
+  transition:transform .3s, box-shadow .3s;
+}
+.tl-item:hover .tl-dot{
+  transform:scale(1.5);
+  box-shadow:0 0 0 6px rgba(0,63,127,.15);
+}
+.tl-item.major .tl-dot{background:var(--un-blue-deep)}
+.tl-item.crisis .tl-dot{border-color:var(--c1);background:var(--c1)}
+.tl-label{
+  font-size:.78rem;font-weight:600;line-height:1.3;
+  max-width:14ch;
+}
+.tl-detail{
+  font-size:.72rem;color:var(--muted);line-height:1.4;
+  max-width:18ch;font-family:"Inter",sans-serif;
+}
+.tl-item:nth-child(even) .tl-info{order:-1;flex-direction:column-reverse}
+.tl-info{display:flex;flex-direction:column;gap:6px;align-items:center}
+@media(max-width:980px){
+  .tl-track{grid-template-columns:1fr;gap:24px}
+  .timeline::before{left:30px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .tl-item{flex-direction:row;text-align:left;gap:18px;padding-left:14px}
+  .tl-info{align-items:flex-start;flex:1}
+}
+
+/* ───────── Section: Top 3 ───────── */
+.top-section{background:var(--paper-2)}
+.top-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.top-col{
+  background:#fff;
+  padding:40px 36px;
+  border-top:6px solid;
+}
+.top-col.best{border-color:var(--c3)}
+.top-col.worst{border-color:var(--c1)}
+.top-col h3{
+  display:flex;align-items:center;gap:12px;margin-bottom:24px;
+  font-size:1.2rem;
+}
+.top-col h3 .tag{
+  font-family:"JetBrains Mono",monospace;font-size:.7rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:4px 10px;border-radius:2px;color:#fff;
+}
+.top-col.best h3 .tag{background:var(--c3)}
+.top-col.worst h3 .tag{background:var(--c1)}
+.top-row{
+  display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:center;
+  padding:22px 0;border-bottom:1px solid var(--rule);
+}
+.top-row:last-child{border-bottom:none}
+.top-row .badge{
+  width:48px;height:48px;border-radius:4px;
+  display:grid;place-items:center;color:#fff;
+  font-family:"Montserrat",sans-serif;font-weight:900;font-size:1.2rem;
+}
+.top-row .info h4{font-family:"Inter",sans-serif;font-size:.92rem;font-weight:700;margin:0 0 4px}
+.top-row .info p{font-size:.8rem;color:var(--muted);margin:0;line-height:1.5}
+.top-row .stat{
+  font-family:"Montserrat",sans-serif;font-weight:800;
+  font-size:1.4rem;letter-spacing:-.02em;text-align:right;line-height:1;
+}
+.top-row .stat small{display:block;font-family:"JetBrains Mono",monospace;font-size:.65rem;letter-spacing:.14em;color:var(--muted);font-weight:400;margin-top:6px;text-transform:uppercase}
+@media(max-width:880px){.top-grid{grid-template-columns:1fr}}
+
+/* ───────── Section: Regional ───────── */
+.regional .reg-list{
+  display:flex;flex-direction:column;gap:14px;margin-top:40px;
+}
+.reg-row{
+  display:grid;grid-template-columns:220px 1fr 80px;gap:24px;align-items:center;
+  padding:14px 0;
+}
+.reg-name{font-weight:600;font-size:.95rem}
+.reg-bar{
+  height:14px;background:var(--paper-2);position:relative;overflow:hidden;
+  border-radius:2px;
+}
+.reg-bar i{
+  display:block;height:100%;width:0;
+  background:linear-gradient(90deg,var(--un-blue-deep),var(--un-blue));
+  transition:width 1.4s cubic-bezier(.2,.7,.2,1);
+}
+.reg-score{
+  font-family:"Montserrat",sans-serif;font-weight:800;
+  font-size:1.2rem;text-align:right;letter-spacing:-.02em;
+}
+.reg-row.lead .reg-bar i{background:linear-gradient(90deg,var(--c3),var(--c15))}
+.reg-row.lag .reg-bar i{background:linear-gradient(90deg,var(--c1),var(--c5))}
+@media(max-width:780px){
+  .reg-row{grid-template-columns:1fr;gap:6px}
+  .reg-score{text-align:left}
+}
+
+/* ───────── Section: Críticas ───────── */
+.crit-section{background:var(--ink-2);color:#fff}
+.crit-section h2{color:#fff}
+.crit-section .lede{color:rgba(255,255,255,.65)}
+.crit-section .kicker{color:rgba(255,255,255,.55)}
+.crit-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.08);
+}
+.crit{
+  background:var(--ink-2);padding:32px 24px;
+  display:flex;flex-direction:column;gap:16px;
+  transition:background .3s;
+}
+.crit:hover{background:#222d44}
+.crit .num{
+  font-family:"JetBrains Mono",monospace;font-size:.75rem;
+  letter-spacing:.18em;color:rgba(255,255,255,.5);
+}
+.crit h3{font-size:1.05rem;font-weight:700;color:#fff}
+.crit p{font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.55;margin:0}
+.crit .accent{
+  height:3px;width:32px;margin-bottom:4px;
+}
+.crit:nth-child(1) .accent{background:var(--c1)}
+.crit:nth-child(2) .accent{background:var(--c10)}
+.crit:nth-child(3) .accent{background:var(--c13)}
+.crit:nth-child(4) .accent{background:var(--c5)}
+.crit:nth-child(5) .accent{background:var(--c7)}
+@media(max-width:1100px){.crit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.crit-grid{grid-template-columns:1fr}}
+
+/* ───────── Conclusion ───────── */
+.concl{
+  background:var(--un-blue-darker);color:#fff;
+  position:relative;overflow:hidden;
+}
+.concl::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 80% 20%, rgba(0,158,219,.25), transparent 60%);
+}
+.concl-inner{position:relative;z-index:2}
+.concl h2{color:#fff;max-width:18ch}
+.concl-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);
+  margin-top:60px;
+}
+.concl-item{
+  background:var(--un-blue-darker);
+  padding:36px 32px;
+  display:flex;gap:24px;
+}
+.concl-item .n{
+  font-family:"Montserrat",sans-serif;font-weight:900;
+  font-size:2.4rem;letter-spacing:-.02em;line-height:1;
+  color:var(--un-blue);
+  flex-shrink:0;
+}
+.concl-item h4{font-family:"Inter",sans-serif;font-size:1rem;font-weight:700;margin:0 0 8px}
+.concl-item p{font-size:.9rem;color:rgba(255,255,255,.72);line-height:1.6;margin:0}
+.quote{
+  margin-top:80px;
+  padding:48px 0 0;
+  border-top:1px solid rgba(255,255,255,.18);
+  display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start;
+}
+.quote .qmark{
+  font-family:"Montserrat",sans-serif;font-size:6rem;line-height:.7;
+  color:var(--un-blue);
+}
+.quote-body p{
+  font-family:"Montserrat",sans-serif;font-weight:600;
+  font-size:clamp(1.2rem,2.4vw,2rem);line-height:1.3;letter-spacing:-.01em;
+  color:#fff;text-wrap:balance;
+}
+.quote-body cite{
+  display:block;margin-top:18px;font-style:normal;
+  font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.6);
+  font-family:"JetBrains Mono",monospace;
+}
+@media(max-width:880px){.concl-grid{grid-template-columns:1fr}}
+
+/* ───────── Footer ───────── */
+.foot{background:var(--ink);color:rgba(255,255,255,.65)}
+.foot-band{
+  display:grid;grid-template-columns:repeat(17,1fr);height:6px;
+}
+.foot-inner{
+  max-width:1400px;margin:0 auto;padding:60px 28px 40px;
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;
+  font-size:.82rem;
+}
+.foot h5{
+  font-family:"JetBrains Mono",monospace;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);font-weight:500;margin:0 0 18px;
+}
+.foot ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.foot li{line-height:1.5}
+.foot .colophon{font-family:"Montserrat",sans-serif;font-weight:800;font-size:1.4rem;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
+.foot .small{font-size:.74rem;color:rgba(255,255,255,.4);line-height:1.6;margin-top:18px}
+.foot-bot{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding:20px 28px;max-width:1400px;margin:0 auto;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;
+  font-family:"JetBrains Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.4);
+}
+@media(max-width:880px){.foot-inner{grid-template-columns:1fr 1fr}}
+
+/* ───────── Modal ───────── */
+.modal-bg{
+  position:fixed;inset:0;background:rgba(10,15,28,.72);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  z-index:200;display:none;align-items:center;justify-content:center;padding:24px;
+  animation:fadeIn .25s ease;
+}
+.modal-bg.open{display:flex}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal{
+  background:#fff;color:var(--ink);
+  width:min(720px,100%);max-height:88vh;overflow:auto;
+  border-radius:4px;position:relative;
+  animation:rise2 .35s cubic-bezier(.2,.7,.2,1);
+}
+@keyframes rise2{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-head{
+  padding:36px 36px 28px;color:#fff;
+  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+}
+.modal-head .mnum{
+  font-family:"Montserrat",sans-serif;font-weight:900;font-size:3rem;line-height:.9;letter-spacing:-.04em;
+}
+.modal-head h3{font-size:1.4rem;color:#fff}
+.modal-head .micon{width:44px;height:44px;opacity:.9}
+.modal-close{
+  position:absolute;top:14px;right:14px;width:36px;height:36px;
+  background:rgba(255,255,255,.18);border:none;border-radius:50%;
+  color:#fff;font-size:1.2rem;cursor:pointer;display:grid;place-items:center;
+  transition:background .3s;
+}
+.modal-close:hover{background:rgba(255,255,255,.32)}
+.modal-body{padding:32px 36px 36px;font-size:.95rem;line-height:1.7}
+.modal-body h4{
+  font-family:"JetBrains Mono",monospace;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;margin:24px 0 10px;
+}
+.modal-body h4:first-child{margin-top:0}
+.modal-body ul{padding-left:18px;margin:0 0 6px}
+.modal-body li{margin-bottom:6px}
+.modal-body .targets{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:8px 24px;
+  font-size:.86rem;color:var(--ink-2);
+}
+.modal-body .src{
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--rule);
+  font-family:"JetBrains Mono",monospace;font-size:.7rem;
+  letter-spacing:.1em;color:var(--muted);
+}
+
+/* ───────── Back to top ───────── */
+.totop{
+  position:fixed;bottom:24px;right:24px;z-index:60;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--un-blue-deep);color:#fff;border:none;cursor:pointer;
+  display:grid;place-items:center;
+  box-shadow:0 10px 30px -8px rgba(0,63,127,.5);
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .3s, transform .3s, background .3s;
+}
+.totop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.totop:hover{background:var(--un-blue)}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease, transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
+
+</style>
+</head>
+<body>
+
+<div class="read-progress" id="readProgress"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-mark">17</div>
+      <div>
+        <div>Agenda 2030</div>
+        <div class="nav-tag">Informe ODS · 2026</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#que-son">¿Qué son?</a>
+      <a href="#objetivos">17 ODS</a>
+      <a href="#estado">Cumplimiento</a>
+      <a href="#financiamiento">Financiamiento</a>
+      <a href="#timeline">Cronología</a>
+      <a href="#regional">Regiones</a>
+      <a href="#criticas">Críticas</a>
+      <a href="#conclusion">Conclusión</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero" id="top">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Agenda 2030 · Naciones Unidas</div>
+      <h1>Diecisiete objetivos. Una década restante. <em>Un planeta en disputa.</em></h1>
+      <p class="hero-sub">Un análisis institucional de los Objetivos de Desarrollo Sostenible: el marco político global que en 2015 prometió erradicar la pobreza, proteger el planeta y garantizar prosperidad para todos. A seis años del horizonte, sólo 17% de las metas avanza según lo previsto.</p>
+      <div class="hero-meta">
+        <span>Fuentes: ONU · SDSN · Banco Mundial</span>
+        <span>Última actualización: Q3 2024</span>
+        <span>Documento académico</span>
+      </div>
+    </div>
+    <div class="hero-counters">
+      <div class="counter">
+        <div class="num" data-count="17" data-suffix="">0</div>
+        <div class="lbl">Objetivos<br>globales</div>
+      </div>
+      <div class="counter">
+        <div class="num" data-count="169" data-suffix="">0</div>
+        <div class="lbl">Metas<br>específicas</div>
+      </div>
+      <div class="counter">
+        <div class="num" data-count="2030" data-suffix="">0</div>
+        <div class="lbl">Año<br>horizonte</div>
+      </div>
+    </div>
+  </div>
+  <div class="sdg-band" id="sdgBand"></div>
+</header>
+
+<!-- ═══════════ ¿QUÉ SON? ═══════════ -->
+<section id="que-son">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">01 · Marco conceptual</div>
+        <h2 class="reveal">Tres pilares para un desarrollo verdaderamente sostenible.</h2>
+      </div>
+      <p class="lede reveal d1">Adoptados por los 193 Estados miembros de la ONU en septiembre de 2015, los ODS organizan el desarrollo humano alrededor de tres dimensiones inseparables — Personas, Planeta y Prosperidad — sumando dos ejes transversales: Paz y Alianzas (United Nations, 2015).</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar p-personas reveal">
+        <div class="pillar-num">PILAR 01 · PERSONAS</div>
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><circle cx="12" cy="7" r="4"/><path d="M12 13c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z"/></svg>
+        </div>
+        <h3>Personas</h3>
+        <p>Erradicar la pobreza y el hambre en todas sus formas, garantizando dignidad, igualdad y acceso a salud, educación y agua para los 8.000 millones de habitantes del planeta.</p>
+        <div class="pillar-stat">
+          <strong>ODS 1 · 2 · 3 · 4 · 5</strong>
+          <span>5 objetivos<br>centrados en la persona</span>
+        </div>
+      </div>
+      <div class="pillar p-planeta reveal d1">
+        <div class="pillar-num">PILAR 02 · PLANETA</div>
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 4 3 14 0 18M12 3c-3 4-3 14 0 18"/></svg>
+        </div>
+        <h3>Planeta</h3>
+        <p>Proteger los recursos naturales y el clima de la Tierra para las generaciones futuras: combatir la crisis climática, frenar la pérdida de biodiversidad y transformar los modelos de consumo.</p>
+        <div class="pillar-stat">
+          <strong>ODS 6 · 12 · 13 · 14 · 15</strong>
+          <span>5 objetivos<br>medioambientales</span>
+        </div>
+      </div>
+      <div class="pillar p-prosperidad reveal d2">
+        <div class="pillar-num">PILAR 03 · PROSPERIDAD</div>
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M5 20V10l4-3 4 3v10M13 20V13l4-3 4 3v7"/></svg>
+        </div>
+        <h3>Prosperidad</h3>
+        <p>Asegurar que todos los seres humanos puedan disfrutar de una vida próspera mediante el crecimiento económico inclusivo, la innovación tecnológica y la reducción de las desigualdades estructurales.</p>
+        <div class="pillar-stat">
+          <strong>ODS 7 · 8 · 9 · 10 · 11</strong>
+          <span>5 objetivos<br>económicos y sociales</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 17 ODS GRID ═══════════ -->
+<section id="objetivos" class="sdg-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">02 · Los objetivos</div>
+        <h2 class="reveal">Los 17 Objetivos de Desarrollo Sostenible.</h2>
+      </div>
+      <p class="lede reveal d1">Cada objetivo opera como una unidad temática autocontenida con metas, indicadores y mecanismos de seguimiento. Hacé clic en cualquier tarjeta para acceder a la ficha técnica completa con metas globales, datos clave y fuente.</p>
+    </div>
+
+    <div class="sdg-grid" id="sdgGrid">
+      <!-- Generated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ ESTADO ═══════════ -->
+<section id="estado" class="status">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">03 · Diagnóstico 2024</div>
+        <h2 class="reveal">A seis años del plazo, el balance es severo.</h2>
+      </div>
+      <p class="lede reveal d1">El Informe sobre los Objetivos de Desarrollo Sostenible 2024 evaluó las 169 metas en función de su trayectoria. Sólo una de cada seis avanza al ritmo necesario; el resto requiere aceleración urgente o presenta retroceso (United Nations, 2024).</p>
+    </div>
+
+    <div class="status-grid">
+      <div class="stat stat-1 reveal">
+        <div class="pct" data-count="17" data-suffix="%">0%</div>
+        <div class="bar"><i data-w="17"></i></div>
+        <div class="stat-label">En trayectoria</div>
+        <div class="stat-detail">Metas que avanzan al ritmo suficiente para cumplirse en 2030. Concentradas en acceso a electricidad, conectividad móvil y reducción de mortalidad infantil.</div>
+      </div>
+      <div class="stat stat-2 reveal d1">
+        <div class="pct" data-count="48" data-suffix="%">0%</div>
+        <div class="bar"><i data-w="48"></i></div>
+        <div class="stat-label">Progreso insuficiente</div>
+        <div class="stat-detail">Metas con avance moderado o débil. Requieren multiplicar entre 3 y 5 veces el ritmo actual. Incluyen pobreza extrema, educación y trabajo decente.</div>
+      </div>
+      <div class="stat stat-3 reveal d2">
+        <div class="pct" data-count="35" data-suffix="%">0%</div>
+        <div class="bar"><i data-w="35"></i></div>
+        <div class="stat-label">Retroceso o estancamiento</div>
+        <div class="stat-detail">Metas que han empeorado respecto al punto de partida 2015. Hambre, biodiversidad, desigualdad y emisiones encabezan los retrocesos.</div>
+      </div>
+    </div>
+    <div class="status-meta">Fuente: United Nations (2024) — The Sustainable Development Goals Report 2024 · Sobre 169 metas evaluadas</div>
+  </div>
+</section>
+
+<!-- ═══════════ FINANCIAMIENTO ═══════════ -->
+<section id="financiamiento">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">04 · Brecha de financiamiento</div>
+        <h2 class="reveal">Los flujos no alcanzan la escala del compromiso.</h2>
+      </div>
+      <p class="lede reveal d1">El cumplimiento de la Agenda 2030 exige un volumen de inversión que excede la capacidad fiscal actual de los países en desarrollo. La AOD alcanza máximos históricos pero las necesidades crecen aún más rápido (OECD, 2024; UNCTAD, 2024).</p>
+    </div>
+
+    <div class="finance-grid">
+      <div class="fin fin-1 reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><circle cx="12" cy="12" r="3"/><path d="M6 9v.01M18 15v.01"/></svg>
+        <div class="big">USD 3,3–4,5 B</div>
+        <h3>Brecha anual de financiamiento</h3>
+        <p>Estimación del déficit de inversión en países en desarrollo para alcanzar los ODS al 2030. Se ha ampliado un 30% desde 2019 por la pandemia, la crisis energética y el endeudamiento.</p>
+        <div class="src">UNCTAD · World Investment Report 2024</div>
+      </div>
+      <div class="fin fin-2 reveal d1">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7"/></svg>
+        <div class="big">USD 223,7 K</div>
+        <h3>AOD récord en 2023</h3>
+        <p>Asistencia Oficial al Desarrollo neta — máximo histórico — pero con un porcentaje creciente destinado a refugiados dentro de los países donantes, no a programas en países receptores.</p>
+        <div class="src">OECD · DAC Statistics 2024</div>
+      </div>
+      <div class="fin fin-3 reveal d2">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C7 7 7 13 12 22M12 2c5 5 5 11 0 20M3 12h18"/></svg>
+        <div class="big">USD 939 K M</div>
+        <h3>Bonos verdes y sostenibles</h3>
+        <p>Emisión global acumulada en 2023. Crecimiento sostenido pero concentrado en economías avanzadas; sólo el 4% de los flujos llega a países de bajos ingresos.</p>
+        <div class="src">Climate Bonds Initiative 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TIMELINE ═══════════ -->
+<section id="timeline" class="timeline-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">05 · Cronología</div>
+        <h2 class="reveal">Quince años de arquitectura institucional.</h2>
+      </div>
+      <p class="lede reveal d1">Los hitos políticos que transformaron los Objetivos de Desarrollo del Milenio (ODM, 2000–2015) en la agenda universal post-2015. Pasá el cursor sobre cada nodo para ampliar.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-track">
+        <div class="tl-item major reveal">
+          <div class="tl-info">
+            <div class="tl-year">2000</div>
+            <div class="tl-label">Cumbre del Milenio</div>
+            <div class="tl-detail">Adopción de los 8 ODM en Nueva York</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item reveal d1">
+          <div class="tl-info">
+            <div class="tl-year">2012</div>
+            <div class="tl-label">Río+20</div>
+            <div class="tl-detail">Mandato para diseñar los ODS</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item major reveal d2">
+          <div class="tl-info">
+            <div class="tl-year">2015</div>
+            <div class="tl-label">ODS adoptados</div>
+            <div class="tl-detail">Resolución A/RES/70/1 · 193 Estados</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item crisis reveal d3">
+          <div class="tl-info">
+            <div class="tl-year">2020</div>
+            <div class="tl-label">Retroceso COVID-19</div>
+            <div class="tl-detail">Primer aumento de pobreza extrema en 20 años</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item reveal d4">
+          <div class="tl-info">
+            <div class="tl-year">2023</div>
+            <div class="tl-label">Cumbre ODS</div>
+            <div class="tl-detail">Declaración política y plan de aceleración</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item major reveal d5">
+          <div class="tl-info">
+            <div class="tl-year">2024</div>
+            <div class="tl-label">Pacto para el Futuro</div>
+            <div class="tl-detail">Adopción del Summit of the Future</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-item major reveal d5">
+          <div class="tl-info">
+            <div class="tl-year">2030</div>
+            <div class="tl-label">Horizonte</div>
+            <div class="tl-detail">Plazo final de cumplimiento</div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TOP 3 ═══════════ -->
+<section class="top-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">06 · Ranking de cumplimiento</div>
+        <h2 class="reveal">Los que avanzan, los que retroceden.</h2>
+      </div>
+      <p class="lede reveal d1">Lectura comparada del estado de las metas por objetivo. Los avances se concentran en electrificación, salud materno-infantil e infraestructura digital; los retrocesos, en seguridad alimentaria, clima y desigualdad.</p>
+    </div>
+
+    <div class="top-grid">
+      <div class="top-col best reveal">
+        <h3><span class="tag">Top 3 · Más cumplidos</span></h3>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c7)">07</div>
+          <div class="info"><h4>Energía asequible y no contaminante</h4><p>Acceso global a la electricidad y crecimiento sostenido de renovables.</p></div>
+          <div class="stat">91%<small>Acceso eléctrico global</small></div>
+        </div>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c3)">03</div>
+          <div class="info"><h4>Salud y bienestar</h4><p>Mortalidad infantil reducida casi a la mitad desde 2000.</p></div>
+          <div class="stat">−59%<small>Mortalidad &lt;5 años</small></div>
+        </div>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c9)">09</div>
+          <div class="info"><h4>Industria, innovación e infraestructura</h4><p>Cobertura móvil 4G y avance en investigación y desarrollo.</p></div>
+          <div class="stat">95%<small>Cobertura 4G mundial</small></div>
+        </div>
+      </div>
+
+      <div class="top-col worst reveal d1">
+        <h3><span class="tag">Top 3 · Más rezagados</span></h3>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c2)">02</div>
+          <div class="info"><h4>Hambre cero</h4><p>La inseguridad alimentaria severa volvió a niveles previos a 2015.</p></div>
+          <div class="stat">733 M<small>Personas con hambre · FAO 2024</small></div>
+        </div>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c13)">13</div>
+          <div class="info"><h4>Acción por el clima</h4><p>Las emisiones globales siguen creciendo; la trayectoria proyecta +2,7°C.</p></div>
+          <div class="stat">+1,3%<small>Emisiones CO₂ 2023 · IEA</small></div>
+        </div>
+        <div class="top-row">
+          <div class="badge" style="background:var(--c10)">10</div>
+          <div class="info"><h4>Reducción de desigualdades</h4><p>El 1% más rico capturó dos tercios de la nueva riqueza desde 2020.</p></div>
+          <div class="stat">63%<small>Riqueza al 1% · World Inequality Report</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ REGIONAL ═══════════ -->
+<section id="regional" class="regional">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">07 · Comparación regional</div>
+        <h2 class="reveal">Índice ODS 2024 por región.</h2>
+      </div>
+      <p class="lede reveal d1">Puntaje compuesto sobre 100 que mide el avance promedio en los 17 objetivos. Europa lidera por sus sistemas de protección social maduros; el África subsahariana enfrenta brechas estructurales (Sachs et al., 2024).</p>
+    </div>
+
+    <div class="reg-list">
+      <div class="reg-row lead reveal"><div class="reg-name">OCDE / Europa</div><div class="reg-bar"><i data-w="77.6"></i></div><div class="reg-score">77,6</div></div>
+      <div class="reg-row reveal d1"><div class="reg-name">Europa del Este y Asia Central</div><div class="reg-bar"><i data-w="71.8"></i></div><div class="reg-score">71,8</div></div>
+      <div class="reg-row reveal d1"><div class="reg-name">Asia Oriental y del Sur</div><div class="reg-bar"><i data-w="65.9"></i></div><div class="reg-score">65,9</div></div>
+      <div class="reg-row reveal d2"><div class="reg-name">América Latina y el Caribe</div><div class="reg-bar"><i data-w="68.7"></i></div><div class="reg-score">68,7</div></div>
+      <div class="reg-row reveal d2"><div class="reg-name">Medio Oriente y África del Norte</div><div class="reg-bar"><i data-w="64.5"></i></div><div class="reg-score">64,5</div></div>
+      <div class="reg-row reveal d3"><div class="reg-name">Oceanía (excl. Australia/NZ)</div><div class="reg-bar"><i data-w="58.4"></i></div><div class="reg-score">58,4</div></div>
+      <div class="reg-row lag reveal d3"><div class="reg-name">África Subsahariana</div><div class="reg-bar"><i data-w="53.6"></i></div><div class="reg-score">53,6</div></div>
+      <div class="reg-row reveal d4"><div class="reg-name"><strong>Promedio mundial</strong></div><div class="reg-bar"><i data-w="66.9"></i></div><div class="reg-score">66,9</div></div>
+    </div>
+    <div class="status-meta" style="color:var(--muted);border-top:1px solid var(--rule);margin-top:36px;padding-top:18px;font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.04em">Fuente: Sachs, Lafortune, Fuller &amp; Drumm (2024). Sustainable Development Report 2024. SDSN / Cambridge University Press.</div>
+  </div>
+</section>
+
+<!-- ═══════════ CRÍTICAS ═══════════ -->
+<section id="criticas" class="crit-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="kicker">08 · Mirada crítica</div>
+        <h2 class="reveal">Los puntos ciegos de la Agenda.</h2>
+      </div>
+      <p class="lede reveal d1">El consenso académico sobre los ODS reconoce su valor como brújula global pero subraya cinco tensiones estructurales que limitan su capacidad transformadora.</p>
+    </div>
+
+    <div class="crit-grid">
+      <div class="crit reveal">
+        <div class="accent"></div>
+        <div class="num">01</div>
+        <h3>Brecha de financiamiento</h3>
+        <p>El déficit anual entre 3,3 y 4,5 billones de dólares no se cerrará con AOD. La arquitectura financiera internacional sigue penalizando a los países deudores.</p>
+      </div>
+      <div class="crit reveal d1">
+        <div class="accent"></div>
+        <div class="num">02</div>
+        <h3>Metas incumplibles</h3>
+        <p>Varios objetivos — hambre cero, igualdad de género absoluta — son aspiracionales y carecen de mecanismos vinculantes. Su evaluación termina premiando el esfuerzo y no el resultado.</p>
+      </div>
+      <div class="crit reveal d2">
+        <div class="accent"></div>
+        <div class="num">03</div>
+        <h3>Greenwashing corporativo</h3>
+        <p>El uso del logotipo ODS por parte de empresas privadas sin auditoría externa diluye la rendición de cuentas y convierte los objetivos en herramienta de marketing.</p>
+      </div>
+      <div class="crit reveal d3">
+        <div class="accent"></div>
+        <div class="num">04</div>
+        <h3>Desigualdad entre países</h3>
+        <p>El indicador agregado oculta divergencias profundas. Europa avanza en 14 de 17; el África subsahariana retrocede en 6. La Agenda no contempla compensaciones estructurales.</p>
+      </div>
+      <div class="crit reveal d4">
+        <div class="accent"></div>
+        <div class="num">05</div>
+        <h3>Estadísticas débiles</h3>
+        <p>De los 248 indicadores, sólo 132 cuentan con datos comparables anualmente. En países de bajos ingresos, el déficit estadístico hace imposible medir el progreso real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONCLUSIÓN ═══════════ -->
+<section id="conclusion" class="concl">
+  <div class="wrap concl-inner">
+    <div class="section-head">
+      <div>
+        <div class="kicker" style="color:rgba(255,255,255,.55)">09 · Cierre</div>
+        <h2 class="reveal">Cuatro lecciones para la última década de la Agenda.</h2>
+      </div>
+      <p class="lede reveal d1" style="color:rgba(255,255,255,.7)">Los ODS no fracasaron, pero tampoco están en camino. La diferencia entre ambas afirmaciones es política y, sobre todo, financiera. Lo que sigue depende de decisiones tomadas hoy.</p>
+    </div>
+
+    <div class="concl-grid">
+      <div class="concl-item reveal">
+        <div class="n">01</div>
+        <div>
+          <h4>El marco funciona; la ejecución no</h4>
+          <p>Los ODS demostraron utilidad como lenguaje común global y guía de políticas públicas. El problema no es el diagnóstico, sino el ritmo y la escala de las respuestas.</p>
+        </div>
+      </div>
+      <div class="concl-item reveal d1">
+        <div class="n">02</div>
+        <div>
+          <h4>Sin reforma financiera, no hay 2030</h4>
+          <p>La arquitectura financiera internacional debe ofrecer reestructuración de deuda, capitalización de bancos multilaterales y un impuesto mínimo global efectivo.</p>
+        </div>
+      </div>
+      <div class="concl-item reveal d2">
+        <div class="n">03</div>
+        <div>
+          <h4>El multilateralismo está bajo presión</h4>
+          <p>Las crisis geopolíticas debilitan la cooperación internacional. El Pacto para el Futuro (2024) busca recomponer la confianza, pero su implementación sigue siendo voluntaria.</p>
+        </div>
+      </div>
+      <div class="concl-item reveal d3">
+        <div class="n">04</div>
+        <div>
+          <h4>2030 no es un final, es una bisagra</h4>
+          <p>Independientemente del balance final, la Agenda definió la próxima generación de marcos: post-2030, biodiversidad post-Kunming, NDC reforzadas. La transición ya empezó.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <div class="qmark">“</div>
+      <div class="quote-body">
+        <p>Esta es una Agenda de las personas, por las personas y para las personas; y, precisamente por ello, puede transformar nuestro mundo.</p>
+        <cite>Resolución A/RES/70/1 · Transformar nuestro mundo: la Agenda 2030 — Naciones Unidas, 2015</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="foot">
+  <div class="foot-band" id="footBand"></div>
+  <div class="foot-inner">
+    <div>
+      <div class="colophon">Agenda 2030</div>
+      <p>Informe de seguimiento — visualización de los Objetivos de Desarrollo Sostenible de Naciones Unidas y su estado a 2024.</p>
+      <p class="small">Documento producido con fines académicos e informativos. Los datos han sido verificados contra las publicaciones primarias de los organismos citados.</p>
+    </div>
+    <div>
+      <h5>Fuentes primarias</h5>
+      <ul>
+        <li>United Nations (2024)</li>
+        <li>SDSN / Sachs et al. (2024)</li>
+        <li>FAO, IFAD, UNICEF, WFP, WHO (2024)</li>
+        <li>World Bank (2024)</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Otras fuentes</h5>
+      <ul>
+        <li>OECD — DAC Statistics</li>
+        <li>UNDP — Human Development Report</li>
+        <li>UNEP — Emissions Gap Report</li>
+        <li>IEA — World Energy Outlook</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Sobre el documento</h5>
+      <ul>
+        <li>Última revisión: 2024</li>
+        <li>Tipografías: Montserrat, Inter</li>
+        <li>Formato: HTML accesible</li>
+        <li>Estándar APA · 7ª edición</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div>© 2024 — Visualización ODS · Uso académico</div>
+    <div>Naciones Unidas · Agenda 2030 · 17 Objetivos · 169 Metas</div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ═══════════ MODAL ═══════════ -->
+<div class="modal-bg" id="modal" role="dialog" aria-modal="true">
+  <div class="modal" id="modalCard">
+    <div class="modal-head" id="modalHead">
+      <div class="mnum" id="mnum">01</div>
+      <h3 id="mtitle">—</h3>
+      <svg class="micon" id="micon" viewBox="0 0 24 24" fill="currentColor"></svg>
+    </div>
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════ DATA ═══════════
+const SDGS = [
+  {n:1,  c:"#E5243B", t:"Fin de la pobreza",          short:"Erradicar la pobreza extrema y reducir a la mitad la pobreza relativa.", desc:"Erradicar la pobreza en todas sus formas y dimensiones.", targets:["1.1 Pobreza extrema","1.2 Pobreza relativa","1.3 Sistemas de protección social","1.4 Acceso a recursos","1.5 Resiliencia"], data:"712 millones de personas viven con menos de USD 2,15/día (2024). La pandemia interrumpió 25 años de reducción continua.", src:"World Bank · Poverty & Shared Prosperity 2024"},
+  {n:2,  c:"#DDA63A", t:"Hambre cero",                short:"Lograr seguridad alimentaria y agricultura sostenible.", desc:"Poner fin al hambre, lograr la seguridad alimentaria y promover la agricultura sostenible.", targets:["2.1 Acceso a alimentos","2.2 Malnutrición","2.3 Productividad","2.4 Sistemas resilientes","2.5 Diversidad genética"], data:"733 millones de personas pasaron hambre en 2023 — uno de cada once habitantes del planeta. La cifra está estancada desde 2020.", src:"FAO et al. · SOFI 2024"},
+  {n:3,  c:"#4C9F38", t:"Salud y bienestar",          short:"Vidas sanas para todas las edades.", desc:"Garantizar una vida sana y promover el bienestar para todos en todas las edades.", targets:["3.1 Mortalidad materna","3.2 Mortalidad infantil","3.3 Enfermedades transmisibles","3.4 ENT y salud mental","3.8 Cobertura sanitaria universal"], data:"La mortalidad infantil bajó 59% desde 2000. La esperanza de vida cayó 1,8 años por la pandemia y aún no se recuperó.", src:"WHO · World Health Statistics 2024"},
+  {n:4,  c:"#C5192D", t:"Educación de calidad",       short:"Educación inclusiva, equitativa y a lo largo de la vida.", desc:"Garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente.", targets:["4.1 Educación primaria/secundaria","4.2 Primera infancia","4.3 Educación técnica y superior","4.5 Equidad de acceso","4.6 Alfabetización"], data:"244 millones de niños y jóvenes están fuera del sistema educativo. La pandemia provocó la mayor disrupción educativa de la historia.", src:"UNESCO · GEM Report 2024"},
+  {n:5,  c:"#FF3A21", t:"Igualdad de género",         short:"Empoderar a mujeres y niñas en todos los ámbitos.", desc:"Lograr la igualdad de género y empoderar a todas las mujeres y las niñas.", targets:["5.1 Discriminación","5.2 Violencia","5.3 Matrimonio infantil","5.5 Participación","5.a Acceso a recursos"], data:"Al ritmo actual, alcanzar la paridad de género tomaría 134 años. 1 de cada 3 mujeres ha sufrido violencia física o sexual.", src:"UN Women · Gender Snapshot 2024"},
+  {n:6,  c:"#26BDE2", t:"Agua limpia y saneamiento",  short:"Acceso universal a agua potable y saneamiento gestionado.", desc:"Garantizar la disponibilidad y gestión sostenible del agua y el saneamiento para todos.", targets:["6.1 Agua potable","6.2 Saneamiento","6.3 Calidad del agua","6.4 Eficiencia hídrica","6.6 Ecosistemas acuáticos"], data:"2.200 millones de personas carecen de agua potable gestionada de forma segura. 3.500 millones, de saneamiento adecuado.", src:"WHO/UNICEF · JMP 2024"},
+  {n:7,  c:"#FCC30B", t:"Energía asequible",          short:"Energía moderna, fiable y sostenible para todos.", desc:"Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos.", targets:["7.1 Acceso a electricidad","7.2 Renovables","7.3 Eficiencia energética","7.a Cooperación internacional","7.b Infraestructura"], data:"91% de la población mundial tiene acceso a electricidad. Las renovables aportan 30% de la generación eléctrica global, récord histórico.", src:"IEA · World Energy Outlook 2024"},
+  {n:8,  c:"#A21942", t:"Trabajo decente",            short:"Crecimiento económico inclusivo y empleo digno.", desc:"Promover el crecimiento económico sostenido, el empleo pleno y productivo y el trabajo decente.", targets:["8.1 Crecimiento económico","8.5 Empleo pleno","8.6 NEET","8.7 Trabajo infantil","8.8 Derechos laborales"], data:"160 millones de niños siguen en trabajo infantil. La tasa de desempleo juvenil global se mantiene en 13,3%.", src:"ILO · World Employment 2024"},
+  {n:9,  c:"#FD6925", t:"Industria e innovación",     short:"Infraestructura resiliente e industrialización inclusiva.", desc:"Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación.", targets:["9.1 Infraestructura","9.2 Industrialización","9.3 Acceso PYME","9.5 Investigación","9.c Tecnologías de la información"], data:"95% de la población mundial está cubierta por redes 4G. La inversión global en I+D alcanzó USD 2,5 billones (2,7% del PIB mundial).", src:"UNIDO · Industrial Development Report 2024"},
+  {n:10, c:"#DD1367", t:"Reducción de desigualdades", short:"Disminuir las brechas dentro y entre países.", desc:"Reducir la desigualdad en los países y entre ellos.", targets:["10.1 Crecimiento del 40% inferior","10.2 Inclusión social","10.3 Igualdad de oportunidades","10.4 Política fiscal","10.7 Migración"], data:"El 1% más rico capturó dos tercios de la nueva riqueza global desde 2020. La desigualdad entre países cae, dentro de ellos crece.", src:"World Inequality Lab 2024"},
+  {n:11, c:"#FD9D24", t:"Ciudades sostenibles",       short:"Asentamientos inclusivos, seguros y resilientes.", desc:"Lograr que las ciudades sean inclusivas, seguras, resilientes y sostenibles.", targets:["11.1 Vivienda","11.2 Transporte","11.3 Urbanización inclusiva","11.5 Desastres","11.6 Calidad del aire"], data:"1.100 millones viven en barrios marginales. El 99% de la población urbana respira aire que excede los límites de la OMS.", src:"UN-Habitat · World Cities Report 2024"},
+  {n:12, c:"#BF8B2E", t:"Producción y consumo",       short:"Patrones de consumo y producción sostenibles.", desc:"Garantizar modalidades de consumo y producción sostenibles.", targets:["12.2 Recursos naturales","12.3 Pérdida de alimentos","12.4 Productos químicos","12.5 Reducción de residuos","12.7 Compras públicas"], data:"Se desperdicia un tercio de los alimentos producidos globalmente — 1.300 millones de toneladas al año. La huella material per cápita crece sin freno.", src:"UNEP · Food Waste Index 2024"},
+  {n:13, c:"#3F7E44", t:"Acción por el clima",        short:"Medidas urgentes para combatir el cambio climático.", desc:"Adoptar medidas urgentes para combatir el cambio climático y sus efectos.", targets:["13.1 Resiliencia","13.2 Política climática","13.3 Educación climática","13.a Financiamiento (USD 100K M)","13.b Capacidades"], data:"Las emisiones globales de CO₂ aumentaron 1,3% en 2023, alcanzando 37,4 Gt. La temperatura media global se mantiene en +1,45°C respecto a la era preindustrial.", src:"IEA · CO₂ Emissions 2024"},
+  {n:14, c:"#0A97D9", t:"Vida submarina",             short:"Conservación y uso sostenible de océanos y mares.", desc:"Conservar y utilizar sosteniblemente los océanos, los mares y los recursos marinos.", targets:["14.1 Contaminación marina","14.2 Ecosistemas costeros","14.3 Acidificación","14.4 Pesca sostenible","14.5 Áreas protegidas"], data:"35,4% de las poblaciones de peces están sobreexplotadas. El plástico marino podría triplicarse para 2040 sin acción coordinada.", src:"FAO · SOFIA 2024"},
+  {n:15, c:"#56C02B", t:"Vida de ecosistemas",        short:"Proteger ecosistemas terrestres y biodiversidad.", desc:"Proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres y detener la pérdida de biodiversidad.", targets:["15.1 Conservación","15.2 Bosques sostenibles","15.3 Desertificación","15.5 Biodiversidad","15.7 Tráfico de especies"], data:"Se perdieron 6,4 millones de hectáreas de bosque primario tropical en 2023. Un millón de especies está en peligro de extinción.", src:"IPBES · Global Assessment + Global Forest Watch 2024"},
+  {n:16, c:"#00689D", t:"Paz, justicia e instituciones", short:"Sociedades pacíficas, justas e inclusivas.", desc:"Promover sociedades pacíficas e inclusivas, facilitar el acceso a la justicia e instituciones eficaces.", targets:["16.1 Violencia","16.2 Niñez","16.3 Estado de derecho","16.5 Corrupción","16.9 Identidad legal"], data:"120 millones de personas desplazadas forzosamente — récord histórico. 1 de cada 5 niños vive en zonas de conflicto.", src:"UNHCR · Global Trends 2024"},
+  {n:17, c:"#19486A", t:"Alianzas para los objetivos", short:"Revitalizar la alianza mundial para el desarrollo sostenible.", desc:"Fortalecer los medios de implementación y revitalizar la alianza mundial para el desarrollo sostenible.", targets:["17.1 Recursos internos","17.2 AOD","17.3 Financiamiento adicional","17.6 Cooperación tecnológica","17.18 Datos y monitoreo"], data:"AOD alcanzó USD 223,7 mil millones en 2023 — récord — pero sólo cuatro países cumplen el 0,7% del INB comprometido.", src:"OECD · DAC Statistics 2024"},
+];
+
+// ═══════════ SDG ICONS (simplified original glyphs) ═══════════
+function iconFor(n){
+  const icons = {
+    1:'<circle cx="12" cy="12" r="3"/><path d="M3 21q4-6 9-6t9 6"/>',
+    2:'<path d="M12 2v20M6 8q6 4 12 0M6 16q6 4 12 0"/>',
+    3:'<path d="M12 21s-7-5-9-10a5 5 0 019-3 5 5 0 019 3c-2 5-9 10-9 10z"/><path d="M9 12h2v-2h2v2h2v2h-2v2h-2v-2H9z" fill="#fff"/>',
+    4:'<path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11v5q5 3 10 0v-5"/>',
+    5:'<circle cx="12" cy="9" r="4"/><path d="M12 13v8M9 17h6"/>',
+    6:'<path d="M12 3l-5 9a5 5 0 1010 0z"/>',
+    7:'<path d="M13 2L4 14h6l-1 8 9-12h-6z"/>',
+    8:'<path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h6v6"/>',
+    9:'<rect x="3" y="14" width="5" height="7"/><rect x="9" y="9" width="5" height="12"/><rect x="16" y="4" width="5" height="17"/>',
+    10:'<path d="M3 12l4-4M3 12l4 4M3 12h18M21 12l-4-4M21 12l-4 4"/>',
+    11:'<path d="M3 21V10l5-3 5 3v11M13 21V13l4-2 4 2v8M3 21h18"/>',
+    12:'<path d="M12 2L3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/>',
+    13:'<circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/>',
+    14:'<path d="M3 16q4-3 9 0t9 0M3 12q4-3 9 0t9 0M3 8q4-3 9 0t9 0"/>',
+    15:'<path d="M12 2L4 12h4v8h8v-8h4z"/>',
+    16:'<path d="M12 2l9 4-2 12-7 4-7-4L3 6z"/><path d="M9 12l2 2 4-4"/>',
+    17:'<circle cx="9" cy="12" r="4"/><circle cx="15" cy="12" r="4"/>',
+  };
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${icons[n]}</svg>`;
+}
+
+// ═══════════ Build SDG band ═══════════
+const band = document.getElementById('sdgBand');
+const footBand = document.getElementById('footBand');
+SDGS.forEach((s,i)=>{
+  const seg = document.createElement('span');
+  seg.style.background = s.c;
+  seg.style.animationDelay = (i*60)+"ms";
+  band.appendChild(seg);
+
+  const seg2 = document.createElement('span');
+  seg2.style.background = s.c;
+  footBand.appendChild(seg2);
+});
+
+// ═══════════ Build SDG grid ═══════════
+const grid = document.getElementById('sdgGrid');
+SDGS.forEach((s,i)=>{
+  const btn = document.createElement('button');
+  btn.className = 'sdg reveal d'+((i%5)+1);
+  btn.style.background = s.c;
+  btn.dataset.n = s.n;
+  btn.innerHTML = `
+    <div class="icon" style="color:rgba(255,255,255,.95)">${iconFor(s.n)}</div>
+    <div class="num">${String(s.n).padStart(2,'0')}</div>
+    <div class="ttl">${s.t}</div>
+    <div class="desc">${s.short}</div>
+  `;
+  btn.addEventListener('click',()=>openModal(s));
+  grid.appendChild(btn);
+});
+
+// ═══════════ Modal ═══════════
+const modal=document.getElementById('modal');
+const modalHead=document.getElementById('modalHead');
+const mnum=document.getElementById('mnum');
+const mtitle=document.getElementById('mtitle');
+const micon=document.getElementById('micon');
+const modalBody=document.getElementById('modalBody');
+function openModal(s){
+  modalHead.style.background = s.c;
+  mnum.textContent = String(s.n).padStart(2,'0');
+  mtitle.textContent = s.t;
+  micon.innerHTML = iconFor(s.n).replace('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">','').replace('</svg>','');
+  micon.setAttribute('stroke','#fff');
+  micon.setAttribute('stroke-width','1.6');
+  micon.setAttribute('fill','none');
+  micon.setAttribute('stroke-linecap','round');
+  micon.setAttribute('stroke-linejoin','round');
+  modalBody.innerHTML = `
+    <h4>Descripción oficial</h4>
+    <p>${s.desc}</p>
+    <h4>Metas seleccionadas</h4>
+    <div class="targets">${s.targets.map(t=>`<div>· ${t}</div>`).join('')}</div>
+    <h4>Dato clave 2024</h4>
+    <p>${s.data}</p>
+    <div class="src">Fuente: ${s.src}</div>
+  `;
+  modal.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+// ═══════════ Counters ═══════════
+function animateCount(el){
+  const target = +el.dataset.count;
+  const suffix = el.dataset.suffix || '';
+  const duration = 1600;
+  const start = performance.now();
+  function step(t){
+    const p = Math.min(1,(t-start)/duration);
+    const eased = 1 - Math.pow(1-p, 3);
+    const v = Math.round(target * eased);
+    el.textContent = v + suffix;
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ═══════════ Intersection Observer ═══════════
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+
+      // Counters
+      e.target.querySelectorAll && e.target.querySelectorAll('[data-count]').forEach(animateCount);
+      if(e.target.matches && e.target.matches('[data-count]')) animateCount(e.target);
+
+      // Bars
+      e.target.querySelectorAll && e.target.querySelectorAll('[data-w]').forEach(b=>{
+        b.style.width = b.dataset.w + '%';
+      });
+
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.15, rootMargin:"0px 0px -40px 0px"});
+
+document.querySelectorAll('.reveal, [data-count], .stat, .reg-row').forEach(el=>io.observe(el));
+// Hero counters animate immediately
+document.querySelectorAll('.hero-counters [data-count]').forEach(animateCount);
+
+// ═══════════ Reading progress + back-to-top ═══════════
+const rp = document.getElementById('readProgress');
+const totop = document.getElementById('toTop');
+function onScroll(){
+  const h = document.documentElement;
+  const max = h.scrollHeight - h.clientHeight;
+  const pct = Math.max(0,Math.min(100,(h.scrollTop / max) * 100));
+  rp.style.setProperty('--p', pct+'%');
+  if(window.scrollY > 600) totop.classList.add('show');
+  else totop.classList.remove('show');
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+totop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+onScroll();
+
+// Smooth scroll already via CSS scroll-behavior
+</script>
+</body>
+</html>
